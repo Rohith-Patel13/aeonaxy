@@ -7,6 +7,7 @@ import mobilecalendly from '../../images/mobile-calendly.png'
 import integrations from '../../images/integrations.png'
 import account from '../../images/account-settings.png'
 import video from '../../images/video.png'
+import EachCategory from '../EachCategory/index'
 
 
 const categories = [
@@ -48,12 +49,16 @@ const categories = [
     },
 ] 
 
-
+// gap-3 grid xl:grid-cols-3
 
 const Categories = () => {
   return (
-    <div>
-      <h1>Categories</h1>
+    <div className='flex flex-wrap justify-center gap-5 mt-5'>
+        {
+            categories.map((eachCategory)=>(
+                <EachCategory eachCategory={eachCategory} key={eachCategory.id}/>
+            ))
+        }
     </div>
   )
 }

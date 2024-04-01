@@ -8,6 +8,7 @@ import first3 from '../../images/first-bg-3.png'
 import second1 from '../../images/second-bg-1.png'
 import second2 from '../../images/second-bg-2.png'
 import second3 from '../../images/second-bg-3.png'
+import Categories from '../Categories/index'
 
 
 
@@ -49,6 +50,7 @@ const Home = () => {
             </div>
         </div>
       </div>
+      <Categories/>
     </div>
   )
 }
