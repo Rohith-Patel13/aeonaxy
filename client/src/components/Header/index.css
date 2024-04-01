@@ -1,45 +1,24 @@
-.icon{
-    height: 100px;
-    width: 100px;
-    cursor: pointer;
-}
 .header-bg{
-    padding: 1em;
     position: sticky;
     top: 0;
-    /* background-color: antiquewhite; */
-    margin-bottom: 0.8em;
 }
-
-.header-container-bg{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.nav-elements-bg{
-    display: flex;    
-    justify-content: space-evenly;
-    align-items: center;
-    width: 60%;
-}
-
 .nav-el{
     cursor: pointer;
     font-size: 17px;
 }
-.moon{
-    height: 40px;
-    width: 40px;
+.divider {
+    background-color: #000; 
+}
+  
+.up-right-arrow{
+    cursor: pointer;
 }
 
-.divider {
-    width: 1px;
-    height: 15px; 
-    background-color: #000; /* Color of the divider */
-    margin: 0 10px; 
-  }
-  
-.dev-bg{
-    display: flex;
+.home-para{
+    color: rgb(31, 152, 200);
+    font-size: 20px;
+}
+.help-para{
+    font-weight: 600;
+    font-size: 20px;
 }

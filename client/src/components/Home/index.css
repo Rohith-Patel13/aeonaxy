@@ -1,0 +1,24 @@
+.home-bg{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home-bg-head{
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.search-input-bg{
+    border-radius: 2em;
+    border: 3px solid rgb(244, 242, 242);
+}
+
+.search-input{
+    border: 0px solid transparent;
+}
+
+.search-icon{
+    color: white;
+}
