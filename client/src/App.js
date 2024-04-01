@@ -1,11 +1,9 @@
 
-import DemoComponent from "./components/DemoComponent/DemoComponent.js";
+import Main from "./components/Main/index";
 
 function App() {
   return (
-    <div>
-   <DemoComponent />
-    </div>
+   <Main />
   );
 }
 
