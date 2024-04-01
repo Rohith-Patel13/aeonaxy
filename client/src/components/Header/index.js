@@ -3,7 +3,8 @@ import './index.css'
 import moon from '../../images/black-moon.png'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons'; // Import the arrow icon from FontAwesome
+import { faUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
+
 
 
 const Header = () => {
@@ -16,10 +17,10 @@ const Header = () => {
         <div className='nav-elements-bg'>
           <img src={moon} className='moon nav-el' alt='moon' />
 
-          <div>
+          <div className='dev-bg'>
             <p className='developers-nav-el nav-el'
             >Developers</p>
-            <FontAwesomeIcon icon="fa-solid fa-up-right-from-square" />
+            <FontAwesomeIcon icon={faUpRightFromSquare} />
           </div>
 
           <div>
