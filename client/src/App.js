@@ -1,5 +1,5 @@
-import DemoComponent from "./DemoComponent";
 
+import DemoComponent from "./components/DemoComponent/DemoComponent.js";
 
 function App() {
   return (
