@@ -53,24 +53,24 @@ const Footer = () => {
       </div>
       <div className="desc-bg">
         <div className="top-desc">
-            <div className="about m-2 w-[170px]">
-                <h1 className="text-[24px]">About</h1>
+            <div className="about m-1 w-[170px]">
+                <h1 className="head-desc mb-1">About</h1>
                 <p>About Calendly</p>
                 <p>Contact Sales</p>
                 <p>Newsroom</p>
                 <p>Careers</p>
                 <p>Security</p>
             </div>
-            <div className="solutions m-2 w-[170px]">
-                <h1 className="text-[24px]">Solutions</h1>
+            <div className="solutions m-1 w-[170px]">
+                <h1 className="head-desc mb-1">Solutions</h1>
                 <p>Customer Success</p>
                 <p>Sales</p>
                 <p>Recruiting</p>
                 <p>Information Technology</p>
                 <p>Marketing</p>
             </div>
-            <div className="popular-features m-2 w-[170px]">
-                <h1 className="text-[24px]">Popular Features</h1>
+            <div className="popular-features m-1 w-[170px]">
+                <h1 className="head-desc mb-1">Popular Features</h1>
                 <p>Embed Calendly</p>
                 <p>Availability</p>
                 <p>Sending Notifications</p>
@@ -79,18 +79,18 @@ const Footer = () => {
         </div>
 
         <div className="bottom-desc">
-            <div className="support m-2 w-[170px]">
-                <h1 className="text-[24px]">Support</h1>
+            <div className="support m-1 w-[170px]">
+                <h1 className="head-desc mb-1">Support</h1>
                 <p>Help Center</p>
                 <p>Video Tutorials</p>
             </div>
-            <div className="add-ons m-2 w-[170px]">
-                <h1 className="text-[24px]">Add-Ons</h1>
+            <div className="add-ons m-1 w-[170px]">
+                <h1 className="head-desc mb-1">Add-Ons</h1>
                 <p>Download for Chrome</p>
                 <p>Download for Firefox</p>
             </div>
-            <div className="developers m-2 w-[170px]">
-                <h1 className="text-[24px]">Developers</h1>
+            <div className="developers m-1 w-[170px]">
+                <h1 className="head-desc mb-1">Developers</h1>
                 <p>Developer Tools</p>
             </div>
         </div>
