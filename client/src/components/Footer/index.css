@@ -1,0 +1,20 @@
+.footer-bg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.desc-bg{
+    display: flex;
+    flex-direction: column;
+}
+
+.top-desc{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1em;
+}
+.bottom-desc{
+    display: flex;
+    margin: 1em;
+}

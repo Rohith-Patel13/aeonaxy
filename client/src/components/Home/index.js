@@ -51,6 +51,7 @@ const Home = () => {
         </div>
       </div>
       <Categories/>
+      <hr className='dotted-divider'/>
     </div>
   )
 }

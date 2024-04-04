@@ -22,3 +22,12 @@
 .search-icon{
     color: white;
 }
+
+
+.dotted-divider{
+    margin-top: 2em;
+    margin-bottom: 1em;
+    border-top: 3.5px dotted black;
+    width: 85%;
+}
+
