@@ -2,6 +2,8 @@ import './index.css'
 
 import moon from '../../images/black-moon.png'
 import main from '../../images/main-icon.png'
+import menu from '../../images/bars-solid.svg'
+
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
@@ -18,9 +20,11 @@ const Header = () => {
             <div className="h-[20px] w-[1px] mt-[0px] mb-[0px] ml-[10px]  mr-[10px] divider"></div> 
             <p className='help-para'>Help Center</p>
         </div>
-        <div className='flex justify-evenly items-center w-[55%] nav-elements-bg'>
+        <div className='menu-bg'>
+          <img src={menu} alt='' />
+        </div>
+        <div className='nav-elements-bg'>
           <img src={moon} className='h-[40px] w-[40px] moon nav-el' alt='moon' />
-
           <div className='flex items-center justify-center'>
             <p className='mr-2 developers-nav-el nav-el'
             >Developers</p>
