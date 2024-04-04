@@ -35,8 +35,11 @@ npm i --save @fortawesome/free-solid-svg-icons
 npm install @fortawesome/react-fontawesome@latest @fortawesome/fontawesome-svg-core @fortawesome/free-solid-svg-icons
 ```
 
+
 # fontawesome icon code snippets used in project
 https://fontawesome.com/icons/up-right-from-square?f=classic&s=solid
 
 https://fontawesome.com/icons/magnifying-glass?f=classic&s=solid
+
+https://fontawesome.com/icons/bars?f=classic&s=solid 
 

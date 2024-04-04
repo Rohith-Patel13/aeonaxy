@@ -8,7 +8,7 @@ const EachCategory = (props) => {
   return (
     <>
       {title === "Getting Started" && (
-        <button type="button" className='relative left-[173.5px] bottom-[18px] bg-blue-500 text-white py-1 px-2 border-top-right-radius-[16px] rounded-bottom-left rounded-top-right'>New</button>
+        <button type="button" className='new-btn relative  bg-blue-500 text-white py-1 px-2 border-top-right-radius-[16px] rounded-bottom-left rounded-top-right'>New</button>
       )}
       <img src={image} className='h-[90px] w-[100px]' alt={title} />  
       <h1 className='font-extrabold'>{title}</h1>

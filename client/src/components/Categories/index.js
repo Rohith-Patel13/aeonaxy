@@ -68,7 +68,7 @@ const Categories = () => {
         <div
           key={eachCategory.id}
           onClick={() => handleCategoryClicked(eachCategory.id)}
-          className={`cursor-pointer border-solid border-2 rounded-2xl h-[250px] w-[400px] gap-2 flex flex-col items-center justify-center text-center ${
+          className={`each-card cursor-pointer border-solid border-2 rounded-2xl h-[250px] gap-2 flex flex-col items-center justify-center text-center ${
             selectedCategoryId === eachCategory.id ? 'border-blue-500' : 'border-slate-300'
           }`}
         >
