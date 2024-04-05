@@ -4,11 +4,11 @@ import { faUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
 
-
 import './index.css'
 
 import moon from '../../images/black-moon.png'
 import main from '../../images/main-icon.png'
+import sunWhite from '../../images/sunWhite.png'
 // import menu from '../../images/bars-solid.svg'
 
 
@@ -17,6 +17,7 @@ import main from '../../images/main-icon.png'
 const Header = () => {
 
   const [isHamburgerClicked,setIsHamburgerClicked]= useState(false)
+  const [isInDarkMode,setIsInDarkMode] = useState(false)
 
 
   const hamburgerClicked=()=>{
@@ -31,6 +32,10 @@ const Header = () => {
     document.querySelector(nameClass).style.color="inherit"
   }
 
+  const handleDarkMode =()=>{
+    setIsInDarkMode(!isInDarkMode)
+  }
+
   return (
     <>
     <nav className='mb-[0.8em] pt-[1em] header-bg'>
@@ -43,14 +48,18 @@ const Header = () => {
         </div>
 
         <div className='menu-bg'>
-          <img src={moon} className='h-[30px] w-[30px] mr-2 moon nav-el' alt='moon' />
+          <img src={isInDarkMode?sunWhite:moon}
+           onClick={handleDarkMode}
+           className='h-[30px] w-[30px] mr-2 moon nav-el' alt='moon' />
           <FontAwesomeIcon onClick={hamburgerClicked} 
           className='h-[30px] w-[35px] cursor-pointer'
           icon={isHamburgerClicked?faXmark:faBars} />
         </div>
 
         <div className='nav-elements-bg'>
-          <img src={moon} className='h-[40px] w-[40px] moon nav-el' alt='moon' />
+          <img src={isInDarkMode?sunWhite:moon}
+          onClick={handleDarkMode}
+           className='h-[40px] w-[40px] moon nav-el' alt='moon' />
           <div className='flex items-center justify-center'>
             <p 
             onMouseEnter={()=>handleNavigateMouseActive(".developers-nav-el")}
