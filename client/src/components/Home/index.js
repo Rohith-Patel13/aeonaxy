@@ -1,5 +1,9 @@
+// import { useContext } from 'react'
+
 import './index.css'
+// import MyContext from '../MyContext/index'
 import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css'
+
 
 import search from '../../images/search.svg'
 import first1 from '../../images/first-bg-1.png'
@@ -13,8 +17,9 @@ import Categories from '../Categories/index'
 
 
 const Home = () => {
+  // const {isInDarkMode} = useContext(MyContext)
   return (
-    <div className='home-bg'>
+    <div className={`home-bg`}>
       <h1 className='mt-7 home-bg-head'>What can we help you with?</h1>
       <div className='mt-3 shadow p-[12px] flex items-center search-input-bg'>
         <img src={search} className='h-5 mr-2 search-icon' alt='search' />

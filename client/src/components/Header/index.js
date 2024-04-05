@@ -1,10 +1,12 @@
-import { useState } from 'react';
+import { useState,useContext } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
 
 import './index.css'
+// import '../global.css'
+import MyContext from "../MyContext/index"
 
 import moon from '../../images/black-moon.png'
 import main from '../../images/main-icon.png'
@@ -17,7 +19,7 @@ import sunWhite from '../../images/sunWhite.png'
 const Header = () => {
 
   const [isHamburgerClicked,setIsHamburgerClicked]= useState(false)
-  const [isInDarkMode,setIsInDarkMode] = useState(false)
+  const {isInDarkMode,setIsInDarkMode} = useContext(MyContext)
 
 
   const hamburgerClicked=()=>{
@@ -39,13 +41,13 @@ const Header = () => {
 
   return (
     <>
-    <nav className='mb-[0.8em] pt-[1em] header-bg'>
+    <nav className={`mb-[0.8em] pt-[1em] header-bg`}>
       <div className='flex justify-around items-center header-container-bg'>
         <div className='flex justify-center items-center'>
             <img src={main} alt='C' className='mr-1 h-6 cursor-pointer' />
             <p className='home-para cursor-pointer'>Calendly</p>
             <div className="h-[20px] w-[1px] mt-[0px] mb-[0px] ml-[10px]  mr-[10px] divider"></div> 
-            <p className='help-para cursor-pointer'>Help Center</p>
+            <p className={`help-para cursor-pointer`}>Help Center</p>
         </div>
 
         <div className='menu-bg'>
@@ -60,7 +62,7 @@ const Header = () => {
         <div className='nav-elements-bg'>
           <img src={isInDarkMode?sunWhite:moon}
           onClick={handleDarkMode}
-           className='h-[40px] w-[40px] moon nav-el' alt='moon' />
+           className='h-[30px] w-[30px] moon nav-el' alt='moon' />
           <div className='flex items-center justify-center'>
             <p 
             onMouseEnter={()=>handleNavigateMouseActive(".developers-nav-el")}
