@@ -33,12 +33,21 @@
 .menu-bg{
     display: none;
 }
+.nav-elements-menu-bg{
+    display: none;
+}
 
 @media screen and (max-width:1200px) {
     .nav-elements-bg{
         display: none;
     }
     .menu-bg{
-        display: flex
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-elements-menu-bg{
+        display: flex;
+        flex-direction: column;
     }
 }
