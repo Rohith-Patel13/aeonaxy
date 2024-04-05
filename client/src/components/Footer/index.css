@@ -3,6 +3,7 @@
     justify-content: space-evenly;
     /* align-items: center; */
     /* min-height: 58vh; */
+    
 }
 
 .desc-bg{
@@ -34,6 +35,13 @@
 
 .options{
     width: 400px;
+}
+
+.dot{
+    height: 12px;
+    width: 12px;
+    background-color: aqua;
+    border-radius: 50%;
 }
 
 

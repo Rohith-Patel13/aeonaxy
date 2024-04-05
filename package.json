@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@fortawesome/free-brands-svg-icons": "^6.5.2",
     "@reduxjs/toolkit": "^2.2.3",
     "react-redux": "^9.1.0"
   }

@@ -1,18 +1,26 @@
-import { useState } from "react";
+import { useState,useContext } from "react";
+import MyContext from "../MyContext/index";
 import "./index.css"
+
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+
 import appstore from "../../images/app-store.png"
 import playstore from "../../images/play-store.png"
-import twitter from "../../images/x.png"
-import fb from "../../images/fb.png"
-import instagram from "../../images/instagram.png"
-import linkedin from "../../images/linkedin.png"
-import youtube from "../../images/youtube.png"
+
+import twitter from "../../images/twitter.svg"
+import fb from "../../images/facebook-f.svg"
+import insta from '../../images/instagram.svg'
+import linkedin from "../../images/linkedin-in.svg"
+import youtube from "../../images/youtube.svg"
 
 
 
 const Footer = () => {
 
   const [selectedLanguage, setSelectedLanguage] = useState("US");
+  const {isInDarkMode}=useContext(MyContext)
+
 
   const handleLanguageChange = (event) => {
     setSelectedLanguage(event.target.value);
@@ -33,7 +41,7 @@ const Footer = () => {
           <select id="countries"
           value={selectedLanguage}
           onChange={handleLanguageChange}
-          className="bg-gray-50 mt-5 border options
+          className="bg-gray-50 mt-5 border options cursor-pointer
           border-gray-300 text-gray-900 text-sm rounded-lg
           focus:ring-blue-500 focus:border-blue-500 block 
           p-2.5 dark:bg-gray-700 dark:border-gray-600
@@ -48,11 +56,11 @@ const Footer = () => {
               <img src={playstore}  alt="play-store"/>
           </div>
           <div className="flex mt-5">
-              <img className="mr-5 h-5" src={twitter} alt="x" />
-              <img className="mr-5 h-5" src={fb} alt="fb" />
-              <img className="mr-5 h-5" src={instagram} alt="instagram" />
-              <img className="mr-5 h-5" src={linkedin} alt="linkedin" />
-              <img className="mr-5 h-5" src={youtube} alt="youtube" />
+              <img className={`mr-5 h-5 ${isInDarkMode?"darkImage":""}`} src={twitter} alt="x" />
+              <img className={`mr-5 h-5 ${isInDarkMode?"darkImage":""}`} src={fb} alt="fb" />
+              <img className={`mr-5 h-5 ${isInDarkMode?"darkImage":""}`} src={insta} alt="insta" />
+              <img className={`mr-5 h-5 ${isInDarkMode?"darkImage":""}`} src={linkedin} alt="linkedin" />
+              <img className={`mr-5 h-5 ${isInDarkMode?"darkImage":""}`} src={youtube} alt="youtube" />
           </div>
         </div>
         <div className="desc-bg">
@@ -102,7 +110,7 @@ const Footer = () => {
       </div>
       <div className="footer-last-policy-bg w-[100%]">
         <p className="each-footer-text">Copyright Calendly 2022</p>
-        <p className="each-footer-text">Calendly Status</p>
+        <div className="flex justify-center items-center each-footer-text"><div className="dot"></div> <p className="ml-1">Calendly Status</p></div>
         <p className="each-footer-text">Privacy / Terms and Conditions</p>
       </div>
     </div>

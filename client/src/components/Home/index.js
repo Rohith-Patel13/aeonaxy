@@ -1,7 +1,8 @@
-// import { useContext } from 'react'
+import { useContext } from 'react'
 
 import './index.css'
-// import MyContext from '../MyContext/index'
+
+import MyContext from '../MyContext/index'
 import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 
 
@@ -15,15 +16,15 @@ import second3 from '../../images/second-bg-3.png'
 import Categories from '../Categories/index'
 
 
-
 const Home = () => {
-  // const {isInDarkMode} = useContext(MyContext)
+  const {isInDarkMode} = useContext(MyContext)
   return (
     <div className={`home-bg`}>
+
       <h1 className='mt-7 home-bg-head'>What can we help you with?</h1>
       <div className='mt-3 shadow p-[12px] flex items-center search-input-bg'>
-        <img src={search} className='h-5 mr-2 search-icon' alt='search' />
-        <input type='search' className='w-[500px] p-1 search-input' placeholder='Search our articles'/>
+        <img src={search} className={`h-5 mr-2 search-icon ${isInDarkMode?"darkImage":""} `} alt='search' />
+        <input type='search' className={`w-[500px] p-1 search-input ${isInDarkMode?"darkmode-bg":""}`} placeholder='Search our articles'/>
       </div>
       <div className='mt-5 flex justify-between items-center show-case-bg'>
         <div>
@@ -55,8 +56,9 @@ const Home = () => {
             </div>
         </div>
       </div>
+      <h1 className='mt-5 text-[50px] font-bold'>Categories</h1>
       <Categories/>
-      <hr className='dotted-divider'/>
+      <hr className={`mt-[6em] ${isInDarkMode?"darkModeborder":""} dotted-divider `}/>
     </div>
   )
 }

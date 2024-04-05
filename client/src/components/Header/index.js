@@ -4,6 +4,7 @@ import { faUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
 
+
 import './index.css'
 // import '../global.css'
 import MyContext from "../MyContext/index"
@@ -47,7 +48,7 @@ const Header = () => {
         <div className='flex justify-center items-center'>
             <img src={main} alt='C' className='mr-1 h-6 cursor-pointer' />
             <p className='home-para cursor-pointer'>Calendly</p>
-            <div className="h-[20px] w-[1px] mt-[0px] mb-[0px] ml-[10px]  mr-[10px] divider"></div> 
+            <div className={`h-[20px] w-[1px] mt-[0px] mb-[0px] ml-[10px]  mr-[10px] divider ${isInDarkMode?"darkmodeWhiteBg":""}`}></div> 
             <p className={`help-para cursor-pointer`}>Help Center</p>
         </div>
 
@@ -88,9 +89,9 @@ const Header = () => {
 
            >Contact Us</p>
           
-          <div className="h-[20px] w-[1px] mt-[0px] mb-[0px] ml-[10px]  mr-[10px] divider"></div> 
+          <div className={`h-[20px] w-[1px] mt-[0px] mb-[0px] ml-[10px]  mr-[10px] divider ${isInDarkMode?"darkmodeWhiteBg":""}`}></div> 
           
-          <p className='login-nav-el nav-el'
+          <p className={`login-nav-el nav-el`}
             onMouseEnter={()=>handleNavigateMouseActive(".login-nav-el")}
             onMouseLeave={()=>handleNavigateMouseInactive(".login-nav-el")}
 

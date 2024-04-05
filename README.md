@@ -43,4 +43,4 @@ https://fontawesome.com/icons/magnifying-glass?f=classic&s=solid
 
 https://fontawesome.com/icons/bars?f=classic&s=solid 
 
-
+https://fontawesome.com/icons/comment?f=classic&s=regular
