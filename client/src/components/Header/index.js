@@ -28,6 +28,7 @@ const Header = () => {
     document.querySelector(nameClass).style.color="#87CEEB"
   }
 
+
   const handleNavigateMouseInactive = (nameClass)=>{
     document.querySelector(nameClass).style.color="inherit"
   }
