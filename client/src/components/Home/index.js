@@ -20,7 +20,7 @@ const Home = () => {
         <img src={search} className='h-5 mr-2 search-icon' alt='search' />
         <input type='search' className='w-[500px] p-1 search-input' placeholder='Search our articles'/>
       </div>
-      <div className='mt-5 flex justify-between items-center'>
+      <div className='mt-5 flex justify-between items-center show-case-bg'>
         <div>
             <div className='showcase-bg'>
                 <img src={first1} alt='' className='showcase-icon' />
